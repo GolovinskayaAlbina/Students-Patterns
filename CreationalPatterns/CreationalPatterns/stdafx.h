@@ -5,4 +5,9 @@
 
 #pragma once
 
+#include <iostream>
+#include <string>
+#include <stdexcept>
+
+using namespace std;
 // TODO: reference additional headers your program requires here

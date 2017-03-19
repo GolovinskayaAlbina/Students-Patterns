@@ -1,2 +1,3 @@
 #pragma once
-enum SignalType { Analog, Digital };
+
+enum SignalType {Analog, Digital};
