@@ -20,7 +20,7 @@ scheme.Send(new AnalogSignal("10101"));
 ```sh
 SimpleSchemeBuilder schemeBuilder;
 Scheme scheme = schemeBuilder.CreateScheme(Digital);
-scheme.Send(new AnalogSignal("10101"));
+scheme.Send(new DigitalSignal("10101"));
 ```
 
 # Class diagram 
