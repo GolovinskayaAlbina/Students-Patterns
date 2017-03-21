@@ -15,7 +15,7 @@ Scheme scheme = schemeBuilder.CreateScheme(Analog);
 scheme.Send(new AnalogSignal("10101"));
 ```
 
-reate scheme for digital signal 
+Сreate scheme for digital signal 
 
 ```sh
 SimpleSchemeBuilder schemeBuilder;
