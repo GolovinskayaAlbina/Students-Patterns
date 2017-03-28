@@ -1,6 +1,7 @@
 #pragma once
 #include "stdafx.h"
 #include "AnalogChannel.h"
+#include "AnalogSignal.h"
 
 void AnalogChannel::SendSignal(ISignal* signal)
 {

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A1A36179-38F1-4979-8603-FC7100C9DA23}</ProjectGuid>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>CreationalPatterns</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -43,7 +43,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <CLRSupport>false</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -105,6 +105,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -137,19 +138,46 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ChannelsFactory.h" />
+    <ClInclude Include="AnalogAbstractFactory.h" />
+    <ClInclude Include="AnalogChannel.h" />
+    <ClInclude Include="AnalogReceiver.h" />
+    <ClInclude Include="AnalogSignal.h" />
+    <ClInclude Include="AnalogTransmitter.h" />
+    <ClInclude Include="DigitalAbstractFactory.h" />
+    <ClInclude Include="DigitalChannel.h" />
+    <ClInclude Include="DigitalReceiver.h" />
+    <ClInclude Include="DigitalSignal.h" />
+    <ClInclude Include="DigitalTransmitter.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="IAbstractFactory.h" />
     <ClInclude Include="IChannel.h" />
-    <ClInclude Include="IReseiver.h" />
+    <ClInclude Include="IReceiver.h" />
+    <ClInclude Include="ISchemeBuilder.h" />
+    <ClInclude Include="ISignal.h" />
     <ClInclude Include="ITransmitter.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Scheme.h" />
+    <ClInclude Include="SignalType.h" />
+    <ClInclude Include="SimpleSchemeBuilder.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChannelsFactory.cpp" />
+    <ClCompile Include="AnalogAbstractFactory.cpp" />
+    <ClCompile Include="AnalogChannel.cpp" />
+    <ClCompile Include="AnalogReceiver.cpp" />
+    <ClCompile Include="AnalogSignal.cpp" />
+    <ClCompile Include="AnalogTransmitter.cpp" />
     <ClCompile Include="CreationalPatterns.cpp" />
+    <ClCompile Include="DigitalAbstractFactory.cpp" />
+    <ClCompile Include="DigitalChannel.cpp" />
+    <ClCompile Include="DigitalReceiver.cpp" />
+    <ClCompile Include="DigitalSignal.cpp" />
+    <ClCompile Include="DigitalTransmitter.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="SimpleSchemeBuilder.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

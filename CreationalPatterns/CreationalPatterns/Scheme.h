@@ -1,5 +1,7 @@
 #pragma once
 #include "ISignal.h"
+#include "DigitalSignal.h"
+#include "AnalogSignal.h"
 #include "ITransmitter.h"
 #include "IReceiver.h"
 #include "IChannel.h"
@@ -20,7 +22,7 @@ public:
 };
 
 class DAConvarter
-{
+{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 public:
 	virtual ISignal* Convert(ISignal* signal)
 	{

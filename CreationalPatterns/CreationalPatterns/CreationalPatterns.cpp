@@ -2,6 +2,8 @@
 
 #include "stdafx.h"
 #include "SimpleSchemeBuilder.h"
+#include "AnalogSignal.h"
+#include "DigitalSignal.h"
 
 int main()
 {
