@@ -1,34 +1,23 @@
 #include "stdafx.h"
 #include "AboutWindow.h"
+#include "WindowImpl.h"
 
-AboutWindow::AboutWindow(IBackgroundTheme* backgroud)
+AboutWindow::AboutWindow(IBackgroundTheme* background)
 {
-	if (backgroud == NULL)
+	if (background == NULL)
 	{
-		throw invalid_argument("backgroud");
+		throw invalid_argument("background");
 	}
-	_backgroud = backgroud;
-}
-void AboutWindow::DrawBackground(byte* background, int weigth, int height)
-{
-	cout<<"background: "<<endl;;
-	for(int i = 0; i < weigth; i++) {
-		for(int j = 0; j < height; j++) {
-			cout <<static_cast<int>(*(background + i*height + j)) << ' ';
-		}
-		cout<<endl;
-	}
+	_background = background;
+	_window = new WindowImpl();
 }
 void AboutWindow::DrawContent()
 {
-	//title
-	cout<<"About"<<endl;
-	//fill background
-	_backgroud->Fill(static_cast<IWindow*>(this));
-	//add text
-	cout<<"This project was created for learning patterns"<<endl;
+	_window->DrawTitle("About");
+	_background->Fill(_window);
+	_window->DrawText("This project was created for learning patterns");
 }
 void AboutWindow::DrawRect(int x0, int y0, int x1, int y1)
 {
-	cout<<"x0:"<<x0<<"y0:"<<y0<<"x1:"<<x1<<"y1:"<<y1<<endl;
+	_window->DrawRect(x0, y0, x1, y1);
 }

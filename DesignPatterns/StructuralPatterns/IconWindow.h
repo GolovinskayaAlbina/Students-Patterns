@@ -1,15 +1,15 @@
 #pragma once
 #include "IWindow.h"
+#include "IWindowImpl.h"
 #include "IBackgroundTheme.h"
 
 class IconWindow: public IWindow
 {
 private:
-	string _imageFile;
-	IBackgroundTheme* _backgroud;
+	IBackgroundTheme* _background;
+	IWindowImpl* _window;
 public:
-	IconWindow(IBackgroundTheme* backgroud, string imageFile);
-	virtual void DrawBackground(byte* background, int weigth, int height);
+	IconWindow(string imageFile);
 	virtual void DrawContent();
 	virtual void DrawRect(int x0, int y0, int x1, int y1);
 };
