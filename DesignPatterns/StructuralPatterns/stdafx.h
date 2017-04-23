@@ -7,7 +7,8 @@
 
 #include <iostream>
 #include <string>
+#include <exception>
 
 using namespace std;
-
+typedef unsigned char byte;
 // TODO: reference additional headers your program requires here

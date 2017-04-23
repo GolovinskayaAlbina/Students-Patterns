@@ -2,15 +2,25 @@
 //
 
 #include "stdafx.h"
-#include "FileLogger.h"
+#include "ExternalLoggerAdapter.h"
+#include "AboutWindow.h"
+#include "IconWindow.h"
+#include "ColorBackgroundTheme.h"
+#include "ImageBackgroundTheme.h"
 
 int main()
 {
-	ILogger* logger = new FileLogger();
+	ILogger* logger = new ExternalLoggerAdapter();
 	logger->LogError("error");
-	logger->LogWarning("error");
-	logger->LogInfo("error");
-	delete logger;
+	logger->LogWarning("warning");
+	logger->LogInfo("information");
+
+
+	IWindow* aboutWindow = new AboutWindow(new ColorBackgroundTheme(10));
+	aboutWindow->DrawContent();
+
+	IWindow* iconWindow = new IconWindow(new ImageBackgroundTheme("image.png"), "icon.ico");
+	iconWindow->DrawContent();
 	return 0;
 }
 
