@@ -22,6 +22,15 @@
     <Filter Include="Source Files\Logging">
       <UniqueIdentifier>{97990e92-6f0d-454b-883e-4d28b200b505}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Windows">
+      <UniqueIdentifier>{e2c6604c-e65b-4c35-8bf7-c186597524e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Windows">
+      <UniqueIdentifier>{86597c60-6a2f-4327-8dd3-4009ecb3fd39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BackgroundThemes">
+      <UniqueIdentifier>{3ce6bf3a-d0e9-4119-9f16-b0bf3999a483}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -42,6 +51,24 @@
     <ClInclude Include="FileLogger.h">
       <Filter>Header Files\Logging</Filter>
     </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutWindow.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="IconWindow.h">
+      <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="IBackgroundTheme.h">
+      <Filter>Header Files\BackgroundThemes</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBackgroundTheme.h">
+      <Filter>Header Files\BackgroundThemes</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorBackgroundTheme.h">
+      <Filter>Header Files\BackgroundThemes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -58,6 +85,12 @@
     </ClCompile>
     <ClCompile Include="ExternalLoggerAdapter.cpp">
       <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="IconWindow.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutWindow.cpp">
+      <Filter>Source Files\Windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
