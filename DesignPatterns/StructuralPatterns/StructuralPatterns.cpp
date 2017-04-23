@@ -19,7 +19,7 @@ int main()
 	IWindow* aboutWindow = new AboutWindow(new ColorBackgroundTheme(10));
 	aboutWindow->DrawContent();
 
-	IWindow* iconWindow = new IconWindow(new ImageBackgroundTheme("image.png"), "icon.ico");
+	IWindow* iconWindow = new IconWindow("icon.ico");
 	iconWindow->DrawContent();
 	return 0;
 }

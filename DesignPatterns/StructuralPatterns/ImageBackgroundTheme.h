@@ -10,7 +10,7 @@ public:
 	{
 		_imageFile = imageFile;
 	}
-	virtual void Fill(IWindow* window)
+	virtual void Fill(IWindowImpl* window)
 	{
 		//create byte array from image, not it is just emulation
 		byte imageByteArray[2][2]  = {{0,2},{4,6}};

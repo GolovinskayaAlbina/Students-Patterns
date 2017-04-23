@@ -10,7 +10,7 @@ public:
 	{
 		_colorCode = colorCode;
 	}
-	virtual void Fill(IWindow* window)
+	virtual void Fill(IWindowImpl* window)
 	{
 		//create byte array from color, not it is just emulation
 		byte colorByteArray[2][2]  = {{_colorCode,_colorCode},{_colorCode,_colorCode}};
