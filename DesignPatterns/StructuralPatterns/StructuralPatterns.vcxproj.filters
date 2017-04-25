@@ -31,6 +31,12 @@
     <Filter Include="Header Files\BackgroundThemes">
       <UniqueIdentifier>{3ce6bf3a-d0e9-4119-9f16-b0bf3999a483}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{bd3b1f25-c06c-46ad-b988-dcc1d02656be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{087946d4-5a6a-425f-a38f-773dffc7e02a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -74,6 +80,21 @@
     </ClInclude>
     <ClInclude Include="IWindowImpl.h">
       <Filter>Header Files\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ICompositeGraphic.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ISingleGraphic.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
