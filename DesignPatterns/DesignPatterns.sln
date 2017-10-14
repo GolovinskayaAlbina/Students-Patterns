@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreationalPatterns", "Creat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StructuralPatterns", "StructuralPatterns\StructuralPatterns.vcxproj", "{E2CBF23E-688D-426F-8987-704A8E9E04D5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns\BehavioralPatterns.vcxproj", "{2E54FB7A-42AF-466B-923B-4661287F5873}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns.vcxproj", "{2E54FB7A-42AF-466B-923B-4661287F5873}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
