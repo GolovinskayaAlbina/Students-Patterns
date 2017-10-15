@@ -19,6 +19,12 @@
     <Filter Include="Header Files\Commands">
       <UniqueIdentifier>{7c48fc25-b58a-482c-9cbe-228288e4405d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Expressions">
+      <UniqueIdentifier>{5245d008-e2c5-4c94-9a1c-b71d84f1a10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Expressions">
+      <UniqueIdentifier>{f4236a8f-bdf5-4b1b-90a6-15dfe5bd3c6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -66,6 +72,24 @@
     <ClInclude Include="Buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BooleanExpression.h">
+      <Filter>Header Files\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="AndExpression.h">
+      <Filter>Header Files\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableExpression.h">
+      <Filter>Header Files\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Header Files\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NotExpression.h">
+      <Filter>Header Files\Expressions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -73,6 +97,21 @@
     </ClCompile>
     <ClCompile Include="BehavioralPatterns.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AndExpression.cpp">
+      <Filter>Source Files\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Constant.cpp">
+      <Filter>Source Files\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="NotExpression.cpp">
+      <Filter>Source Files\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableExpression.cpp">
+      <Filter>Source Files\Expressions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

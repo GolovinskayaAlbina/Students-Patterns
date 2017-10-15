@@ -9,7 +9,10 @@
 #include "MenuItem.h"
 #include "CopyCommand.h"
 #include "PastCommand.h"
-
+#include "VariableExpression.h"
+#include "AndExpression.h"
+#include "NotExpression.h"
+#include "Constant.h"
 int main()
 {
 	//chain of responsibility
@@ -33,6 +36,18 @@ int main()
 	copyMenuItem.Click();
 	pastMenuItem.Click();
 
-	cout << docTarget->Text;
+	cout << docTarget->Text<<endl;
+
+	//Interpretator
+	VariableExpression* x = new VariableExpression("x");
+	VariableExpression* y = new VariableExpression("y");
+
+	Context context;
+	context.Assign(x->GetName(), true);
+	context.Assign(y->GetName(), false);
+
+	//((x and true) and !y)
+	BooleanExpression* expression = new AndExpression(new AndExpression(x, new Constant(true)), new NotExpression(y));
+	cout << expression->Evaluate(context);
 }
 
